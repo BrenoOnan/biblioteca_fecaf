@@ -1,0 +1,229 @@
+/* Estilos Básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Variáveis de Cores (Identidade UniFECAF) */
+:root {
+    --azul-marinho: #002855;
+    --cinza-claro: #e0e0e0;
+    --cinza-escuro: #4a4a4a;
+    --branco: #ffffff;
+}
+
+/* Header / Navegação */
+header {
+    background-color: #002855;
+    color: #ffffff;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Imagens Gerais */
+.banner_todas_img {
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 24px;
+    width: 100%;
+
+}
+
+.banner_secundario {
+    height: 350px;
+    background-color: #e0e0e0;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD9oRuwO37wd7olvYA73omTrL2DJ3_cN3K2BCRyxvvbg&s=10);
+    
+}
+
+.banner_principal {
+    height: 360px;
+    background-color: #e0e0e0;
+    background-image: url(../imagens/imagem_fecaf.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    
+    
+}
+
+/* Seção: Sobre a Biblioteca */
+.sobre {
+    background-color: #f4f4f4;
+    color: #002855;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.sobre_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.img1{
+    background-image: url(../imagens/anatomia.png);
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+
+.img2{
+    background-image: url(../imagens/banco_dados.jpg);
+    background-repeat: no-repeat;
+   
+}
+
+.img3{
+    background-image: url(../imagens/engenharia_software.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.img4{
+    background-image: url(../imagens/psicologia.png);
+    background-repeat: no-repeat;
+
+}
+
+.sobre_item {
+    height: 210px;
+    width: 180px;
+}
+
+/* Seção: Nossos Livros */
+.livros {
+    color: #002855;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.livros_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cartao_livro {
+    background-color: var(--branco);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.imagem_livro {
+    height: 210px;
+    width: 430px;
+    margin-bottom: 15px;
+}
+
+.img_livro1{
+    background-image: url(../imagens/machado.png);
+    width: 100%;
+    max-width: 430px;
+}
+
+.img_livro2{
+    background-image: url(../imagens/fisica.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 430px;
+}
+
+.img_livro3{
+    background-image: url(../imagens/microbiologia.jpg);
+    width: 100%;
+    max-width: 430px;
+}
+
+
+
+.botao {
+    background-color: var(--cinza-escuro);
+    color: var(--branco);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Seção: Unidades */
+.unidades {
+    background-color: #111;
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.item_unidade {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.imagem_unidade {
+    flex: 1;
+
+}
+
+.unid_img1{
+    background-image: url(../imagens/design.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 190px;
+}
+
+.unid_img2{
+    background-image: url(../imagens/front_end.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 190px;
+}
+
+.texto_unidade {
+    flex: 2;
+}
+
+/* Rodapé / Contatos */
+footer {
+    color:#002855;
+    background-color: #e0e0e0;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Responsividade  */
+@media (max-width: 768px) {
+    .item_unidade {
+        flex-direction: column;
+    }
+    
+    .imagem_unidade {
+        width: 100%; 
+        flex: none;
+    }
+    
+}
